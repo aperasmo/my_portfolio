@@ -1,286 +1,444 @@
-<!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-  <!-- Put your site title here -->
-  <title>
-    Allan P. Erasmo | A Software Developer, Tech Lead based in Auckland, New Zealand.
-  </title>
-
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allan P. Erasmo | Software Engineer → DevOps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <!-- Background Effects -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
 
-  <!-- ***** Header ***** -->
-
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Allan</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Software Developer, Team Lead, Masters of Software Engineering(YOOBEE) based in FLast Bush Auckland, New Zealand.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
-    </div>
-  </header>
-
-  <main role="main">
-
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
-      <div class="row">
-        <h2>My School</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>PSE Assessment1</h3>
-              <p>
-                A light Car Rental System, developed using Python (CLI).
-              </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>SQLite3</li>
-                <li>GitHub</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://github.com/aperasmo/pse_assessment_1" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://aperasmo.github.io/my_portfolio/" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-<!--
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Calculator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-        
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Notificator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-            </div>
-          </div>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-logo">allan<span>.erasmo</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-      </div>
-    </section>
-  -->
-<!-- ***** Clients ***** -->
- <!-- Add logos of the clients or companies you'have worked with. -->
-<!--
-<section class="client" id="clients">
-  <div class="row">
-    <h2>Clients</h2>
-    <div class="client__logos">
-      
-      <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-      <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-      <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-      <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-      <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-      <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
-    </div>
-  </div>
-</section>
--->
+    </nav>
 
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              I'm a motivated software engineering professional with a strong foundation 
-              in business analysis, systems implementation, and technology solutions. Currently pursuing a 
-              Master of Software Engineering at Yoobee College of Creative Innovation, 
-              I am building expertise in programming, databases, and system design while 
-              leveraging my prior background in team leadership, product management and enterprise solutions. 
-              With a preference for analyst and implementation roles, I excel at bridging technical 
-              requirements with business needs, ensuring practical and efficient outcomes. 
-              Adaptable and eager to gain local experience in New Zealand, will bring strong problem-solving skills, 
-              collaboration, and a drive for continuous learning and growth.
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-label animate-in">Currently transitioning to DevOps</div>
+            <h1 class="animate-in delay-1">
+                Hi, I'm <span class="gradient-text">Allan</span>.<br>
+                Software Engineer<br>
+                turned <span class="gradient-text">DevOps</span>.
+            </h1>
+            <p class="hero-subtitle animate-in delay-2">
+                13+ years building systems, leading teams, and shipping products. 
+                Now pursuing cloud infrastructure and automation in New Zealand.
             </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
-          </div>
+            <div class="hero-meta animate-in delay-3">
+                <div class="meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    Auckland, New Zealand
+                </div>
+                <div class="meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                    Master's @ Yoobee College
+                </div>
+                <div class="meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    </svg>
+                    AWS SAA (In Progress)
+                </div>
+            </div>
+            <div class="hero-cta animate-in delay-4">
+                <a href="#contact" class="btn btn-primary">
+                    Let's Connect
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
+            </div>
+        </section>
 
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+        <!-- About Section -->
+        <section id="about">
+            <div class="section-header">
+                <div class="section-label">01 // About</div>
+                <h2>Background & Journey</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Software Engineer with over a decade of experience building inventory systems, 
+                        pharmacy solutions, and leading development teams in the Philippines. Now based in Auckland, 
+                        I'm making a deliberate transition into DevOps Engineering.
+                    </p>
+                    <p>
+                        My background isn't just technical. I've led teams of 8+ engineers, architected systems 
+                        serving 50+ enterprise clients, and ran my own business for 6 years. That combination 
+                        gives me something valuable: I understand both the code AND the business impact of 
+                        infrastructure decisions.
+                    </p>
+                    <p>
+                        Currently pursuing my Master of Software Engineering at Yoobee College, with coursework 
+                        in cloud security, data analytics, and machine learning. On my own time, I'm working toward 
+                        AWS Solutions Architect Associate certification — because I believe in learning by doing.
+                    </p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">13+</div>
+                        <div class="stat-label">Years in Software Engineering</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Years Running a Business</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Enterprise Clients Served</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8+</div>
+                        <div class="stat-label">Engineers Led</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- ***** Contact ***** -->
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="section-header">
+                <div class="section-label">02 // Skills</div>
+                <h2>Technical Toolkit</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                        </svg>
+                        Cloud & DevOps
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Cloud Security</span>
+                        <span class="skill-tag">EC2</span>
+                        <span class="skill-tag">S3</span>
+                        <span class="skill-tag">IAM</span>
+                        <span class="skill-tag">VPC</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                        Languages & Frameworks
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">VB.NET</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
+                        </svg>
+                        Databases
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                        AI-Assisted Development
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">GitHub Copilot</span>
+                        <span class="skill-tag">Claude</span>
+                        <span class="skill-tag">Cursor</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        Leadership & Practices
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Team Leadership</span>
+                        <span class="skill-tag">Agile/Scrum</span>
+                        <span class="skill-tag">System Architecture</span>
+                        <span class="skill-tag">Code Review</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        Emerging Tech
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">IoT</span>
+                        <span class="skill-tag">Data Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="section-header">
+                <div class="section-label">03 // Experience</div>
+                <h2>Career Timeline</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">September 2025 – Present</div>
+                        <div class="timeline-title">Master of Software Engineering</div>
+                        <div class="timeline-company">Yoobee College of Creative Innovation, Auckland</div>
+                        <div class="timeline-description">
+                            Coursework in Cloud Security, Data Analytics, IoT, Computer Vision, and Machine Learning. 
+                            Pursuing AWS Solutions Architect Associate certification on my own initiative.
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">July 2018 – September 2025</div>
+                        <div class="timeline-title">Software Engineer Team Lead / Product Manager</div>
+                        <div class="timeline-company">iRipple, Inc. — Philippines</div>
+                        <div class="timeline-description">
+                            Led 8+ engineers building inventory and pharmacy solutions for 50+ enterprise clients. 
+                            Introduced Docker containerization, improved sprint velocity by 25%, reduced bugs by 30%.
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2012 – 2018</div>
+                        <div class="timeline-title">Business Owner / Operations Manager</div>
+                        <div class="timeline-company">Family Enterprise — Retail Operations</div>
+                        <div class="timeline-description">
+                            Built and managed end-to-end retail operations. Implemented data-driven inventory tracking, 
+                            reducing waste by 20%. Developed practical understanding of P&L and business operations.
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2011 – 2012</div>
+                        <div class="timeline-title">Team Lead (Contract)</div>
+                        <div class="timeline-company">Accenture Philippines</div>
+                        <div class="timeline-description">
+                            Supervised team upskilling initiatives for Oracle-based enterprise projects.
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2006 – 2011</div>
+                        <div class="timeline-title">Junior → Senior → Development Manager</div>
+                        <div class="timeline-company">iRipple, Inc. — Philippines</div>
+                        <div class="timeline-description">
+                            Started career building Inventory and POS systems. Progressed to Development Manager, 
+                            leading the Barter Pharmacy product. Optimized queries for 40% faster reports.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="section-header">
+                <div class="section-label">04 // Projects</div>
+                <h2>Featured Work</h2>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                    </div>
+                    <div class="project-title">AI Glaucoma Detection System</div>
+                    <div class="project-subtitle">Professional Software Development — Assessment Project</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        A machine learning pipeline for detecting glaucoma from retinal images. Built with EfficientNetB0 and VGG16 
+                        models achieving 89-91% accuracy. Features explainable AI with Grad-CAM visualizations for medical diagnostics. 
+                        Containerized with Docker and deployed to cloud infrastructure.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>TensorFlow</span>
+                        <span>Docker</span>
+                        <span>Grad-CAM</span>
+                        <span>Render</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                            Live Demo
+                        </a>
+                        <a href="#" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <div class="section-header">
+                <div class="section-label">05 // Education</div>
+                <h2>Academic Background</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card featured">
+                    <div class="education-badge">In Progress</div>
+                    <div class="education-degree">Master of Software Engineering (Level 9)</div>
+                    <div class="education-school">Yoobee College of Creative Innovation, Auckland</div>
+                    <div class="education-date">Expected July 2026</div>
+                </div>
+                <div class="education-card">
+                    <div class="education-badge">In Progress</div>
+                    <div class="education-degree">AWS Solutions Architect Associate</div>
+                    <div class="education-school">Amazon Web Services — Self-Directed</div>
+                    <div class="education-date">Expected Q1 2026</div>
+                </div>
+                <div class="education-card">
+                    <div class="education-degree">Bachelor of Science in Information Technology</div>
+                    <div class="education-school">University of the East, Manila</div>
+                    <div class="education-date">2006 — Highest Thesis Grade</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Availability Section -->
+        <section id="availability">
+            <div class="section-header">
+                <div class="section-label">06 // Availability</div>
+                <h2>Work Authorization</h2>
+            </div>
+            <div class="availability-grid">
+                <div class="availability-card">
+                    <div class="availability-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div class="availability-title">Part-Time Now</div>
+                    <div class="availability-text">Available up to 20 hours/week while completing studies</div>
+                </div>
+                <div class="availability-card">
+                    <div class="availability-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div class="availability-title">Internship Q2 2026</div>
+                    <div class="availability-text">Can fulfill final trimester through industry placement</div>
+                </div>
+                <div class="availability-card">
+                    <div class="availability-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div class="availability-title">Full-Time July 2026</div>
+                    <div class="availability-text">Post Study Work Visa eligible upon graduation</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="section-label" style="justify-content: center;">07 // Contact</div>
+            <h2>Let's <span class="gradient-text">Connect</span></h2>
+            <p>
+                Looking for a DevOps Engineer or Cloud Engineer with deep software engineering roots? 
+                I'd love to hear from you.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:allanperasmo@gmail.com" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    Email Me
+                </a>
+                <a href="https://linkedin.com/in/allanperasmo" target="_blank" class="btn btn-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/allanperasmo" target="_blank" class="btn btn-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-text">
+            Built with <span>☕</span> and <span>Claude</span> · © 2025 Allan P. Erasmo
         </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:allanperasmo@gmail.com" class="btn">allanperasmo@gmail.com</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://messenger.com/vianallan/" title="Link to messenger">
-            <img src="./images/messenger.svg" class="footer__social-image" alt="Messenger">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/aperasmo/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-       <!---
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-    -->
-      <!--
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
-    -->
-    </div>
-  </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
+    </footer>
 </body>
-
 </html>
