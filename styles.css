@@ -607,6 +607,107 @@ section {
 }
 
 /* ========================================
+   Project Screenshots Carousel
+   ======================================== */
+
+.project-screenshots {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.screenshot-carousel {
+    position: relative;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.screenshot-track {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.screenshot-slide {
+    min-width: 100%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.screenshot-slide img {
+    width: 100%;
+    height: 340px;
+    object-fit: contain;
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.screenshot-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.screenshot-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+
+.screenshot-btn:hover {
+    background: rgba(34, 211, 238, 0.15);
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.screenshot-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.screenshot-btn-prev { left: 0.75rem; }
+.screenshot-btn-next { right: 0.75rem; }
+
+.screenshot-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.625rem;
+    background: var(--bg-card);
+}
+
+.screenshot-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border-color);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+
+.screenshot-dot.active {
+    background: var(--accent-primary);
+    transform: scale(1.3);
+}
+
+/* ========================================
    Education Section
    ======================================== */
 

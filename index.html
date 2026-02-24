@@ -307,6 +307,65 @@
                     <div class="project-title">AI Glaucoma Detection System</div>
                     <div class="project-subtitle">Professional Software Development — Assessment Project</div>
                 </div>
+                <!-- Screenshot Carousel -->
+                <div class="project-screenshots">
+                    <div class="screenshot-carousel">
+                        <div class="screenshot-track" id="screenshotTrack">
+                            <div class="screenshot-slide">
+                                <img src="UI_Screenshot/1_landing_page.png" alt="Landing Page" loading="lazy">
+                                <div class="screenshot-caption">1 / 8 — Landing Page</div>
+                            </div>
+                            <div class="screenshot-slide">
+                                <img src="UI_Screenshot/2_uploaded_fundus_image.png" alt="Upload Fundus Image" loading="lazy">
+                                <div class="screenshot-caption">2 / 8 — Upload Fundus Image</div>
+                            </div>
+                            <div class="screenshot-slide">
+                                <img src="UI_Screenshot/3_image_selected.png" alt="Image Selected" loading="lazy">
+                                <div class="screenshot-caption">3 / 8 — Image Selected</div>
+                            </div>
+                            <div class="screenshot-slide">
+                                <img src="UI_Screenshot/4_rocessing.png" alt="Processing" loading="lazy">
+                                <div class="screenshot-caption">4 / 8 — Processing</div>
+                            </div>
+                            <div class="screenshot-slide">
+                                <img src="UI_Screenshot/5_results.png" alt="Results" loading="lazy">
+                                <div class="screenshot-caption">5 / 8 — Results</div>
+                            </div>
+                            <div class="screenshot-slide">
+                                <img src="UI_Screenshot/6_grad_cam.png" alt="Grad-CAM Visualization" loading="lazy">
+                                <div class="screenshot-caption">6 / 8 — Grad-CAM Visualization</div>
+                            </div>
+                            <div class="screenshot-slide">
+                                <img src="UI_Screenshot/7_LLM_narrarive_negative.png" alt="LLM Narrative — Negative Result" loading="lazy">
+                                <div class="screenshot-caption">7 / 8 — LLM Narrative (Negative)</div>
+                            </div>
+                            <div class="screenshot-slide">
+                                <img src="UI_Screenshot/8_LLM_narrarive_positive.png" alt="LLM Narrative — Positive Result" loading="lazy">
+                                <div class="screenshot-caption">8 / 8 — LLM Narrative (Positive)</div>
+                            </div>
+                        </div>
+                        <button class="screenshot-btn screenshot-btn-prev" onclick="changeScreenshot(-1)" aria-label="Previous screenshot">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button class="screenshot-btn screenshot-btn-next" onclick="changeScreenshot(1)" aria-label="Next screenshot">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="screenshot-dots" id="screenshotDots">
+                        <button class="screenshot-dot active" onclick="goToScreenshot(0)" aria-label="Slide 1"></button>
+                        <button class="screenshot-dot" onclick="goToScreenshot(1)" aria-label="Slide 2"></button>
+                        <button class="screenshot-dot" onclick="goToScreenshot(2)" aria-label="Slide 3"></button>
+                        <button class="screenshot-dot" onclick="goToScreenshot(3)" aria-label="Slide 4"></button>
+                        <button class="screenshot-dot" onclick="goToScreenshot(4)" aria-label="Slide 5"></button>
+                        <button class="screenshot-dot" onclick="goToScreenshot(5)" aria-label="Slide 6"></button>
+                        <button class="screenshot-dot" onclick="goToScreenshot(6)" aria-label="Slide 7"></button>
+                        <button class="screenshot-dot" onclick="goToScreenshot(7)" aria-label="Slide 8"></button>
+                    </div>
+                </div>
                 <div class="project-body">
                     <p class="project-description">
                         A machine learning pipeline for detecting glaucoma from retinal images. Built with EfficientNetB0 and VGG16 
@@ -356,7 +415,7 @@
                     <div class="education-badge">In Progress</div>
                     <div class="education-degree">AWS Solutions Architect Associate</div>
                     <div class="education-school">Amazon Web Services — Self-Directed</div>
-                    <div class="education-date">Expected Q1 2026</div>
+                    <div class="education-date">Expected Q2 2026</div>
                 </div>
                 <div class="education-card">
                     <div class="education-degree">Bachelor of Science in Information Technology</div>
@@ -437,4 +496,32 @@
     <!-- Footer -->
     <footer>
         <p class="footer-text">
-             © 2025 Allan P. Erasm
+             © 2025 Allan P. Erasmo. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const totalSlides = 8;
+
+        function updateCarousel() {
+            const track = document.getElementById('screenshotTrack');
+            const dots = document.querySelectorAll('.screenshot-dot');
+            track.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
+            dots.forEach(function(dot, i) {
+                dot.classList.toggle('active', i === currentSlide);
+            });
+        }
+
+        function changeScreenshot(dir) {
+            currentSlide = (currentSlide + dir + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function goToScreenshot(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+    </script>
+</body>
+</html>
